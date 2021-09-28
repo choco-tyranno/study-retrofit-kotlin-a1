@@ -27,7 +27,7 @@
         tools:text="인천 미추홀구 주안동 124132431" />
 
     <TextView
-        android:id="@+id/remain_text_view2"
+        android:id="@+id/remain_text_view"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
@@ -42,7 +42,7 @@
         android:layout_height="wrap_content"
         android:layout_marginEnd="16dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/remain_text_view2"
+        app:layout_constraintTop_toBottomOf="@+id/remain_text_view"
         tools:text="100개 이상" />
 
     <TextView
