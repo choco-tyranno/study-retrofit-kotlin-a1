@@ -6,7 +6,8 @@ import retrofit2.http.Query
 import javax.inject.Inject
 
 interface MaskService {
-    @GET("storesByGeo/json/?m=5000")
+//    @GET("storesByGeo/json/?m=5000")
+    @GET("?m=5000")
     suspend fun fetchStoreInfo(
         @Query("lat") lat : Double,
         @Query("lng") lng : Double
