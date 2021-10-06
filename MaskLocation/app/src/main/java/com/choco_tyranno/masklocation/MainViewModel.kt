@@ -36,7 +36,9 @@ class MainViewModel @Inject constructor(
         fusedLocationClient.lastLocation.addOnSuccessListener { location->
             viewModelScope.launch {
                 val storeInfo = service.fetchStoreInfo(location.latitude, location.longitude)
-                itemLiveData.value = storeInfo.stores
+                itemLiveData.value = storeInfo.stores.filter { store ->
+                    store.remain_stat != null
+                }
                 loadingLiveData.value = false
             }
         }.addOnFailureListener {exception->
