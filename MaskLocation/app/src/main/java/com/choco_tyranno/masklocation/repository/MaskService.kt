@@ -3,6 +3,7 @@ package com.choco_tyranno.masklocation.repository
 import com.choco_tyranno.masklocation.model.StoreInfo
 import retrofit2.http.GET
 import retrofit2.http.Query
+import javax.inject.Inject
 
 interface MaskService {
     @GET("storesByGeo/json/?m=5000")
